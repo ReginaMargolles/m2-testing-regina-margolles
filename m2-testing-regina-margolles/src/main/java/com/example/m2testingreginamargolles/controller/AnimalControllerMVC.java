@@ -39,7 +39,6 @@ public String findAll (Model model) {
     List<Animal> animals = new ArrayList<>();
     animals = repository.findAll();
     System.out.println("El tamaño de la lista es: " + animals.size());
-
     model.addAttribute("animals", animals);
     return "animal-list";
 }
